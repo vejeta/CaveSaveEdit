@@ -5,6 +5,16 @@ First off, CaveSaveEdit will only compile on Java 8 without modifications to the
 CSE has a dependency on [Rhino](https://github.com/mozilla/rhino). Versions 1_7R5, 1.7.7.2 and 1.7.8 have been confirmed to work, although other versions might work as well.  
 There is only one `main` method, located in `com.leo.cse.frontend.Main`.  
 This is an Eclipse project, although I believe IntelliJ can import Eclipse projects natively.  
+
+On the command line:
+```
+gradle fatJar
+```
+After that it can be run with:
+```
+java -jar build/libs/CaveSaveEdit.jar
+```
+
 # How to Use
 Click on "File" -> "Load Profile" to load a profile. If a Profile.dat file is found in the same directory as the application, it will be loaded automatically on startup.  
 Modify the values to your liking, and then click on "File" -> "Save" in the toolbar to save the new profile.  
